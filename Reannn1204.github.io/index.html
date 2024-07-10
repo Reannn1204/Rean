@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <style type="text/css">
             body {
                 width: 100%;
@@ -52,6 +53,7 @@
                 flex: 1;
                 text-align: right;
                 margin: 9em 8em 0 0;
+                position: relative;
             }
             .container h1, p {
                 margin: 0px;
@@ -100,6 +102,40 @@
                 background-color: white;
                 color: black;
                 text-align: center;
+            }
+                        @media only screen and (max-width: 600px) {
+                nav a{
+                    margin: 0px;
+                }
+                .home {
+                    position: unset;
+                    text-align: center;
+                    flex-direction: column;
+                }
+                .home img {
+                    margin-top: 0px;
+                    width: 50%;
+                    left: 30%;
+                    width: 40%;
+                    justify-content: center;
+                }
+                .home .container {
+                    text-align: center;
+                    margin: 14em 0 0 0;
+                }
+                .container h1 {
+                    margin: 0em;
+                }
+                .about-me {
+                    margin-top: 2em;
+                    padding: 3em;
+                    margin-bottom: 2em;
+                }
+                .contact-me {
+                    padding: 2em;
+                    padding-bottom: 2em;
+                }
+
             }
         </style>
     </head>
